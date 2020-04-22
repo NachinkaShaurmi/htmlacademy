@@ -1,0 +1,262 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	font-style: 15px;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	box-sizing: border-box;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+
+}
+
+header, nav, main {
+	max-width: 1440px;
+	margin: 0 auto;
+	font-family: 'Roboto', sans-serif;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+	flex-shrink: 0;
+}
+
+.header {
+	text-align: center;
+	font-family: Playfair Display;
+	font-weight: 900;
+	margin-top: 59px;
+}
+
+.navigation {
+	display: flex;
+	max-width: 1171px;
+	margin: 47px auto;
+	justify-content: space-between;
+	font-family: Roboto;
+	font-weight: 400;
+	text-transform: uppercase;
+	flex-wrap: wrap;
+
+}
+
+.main-news {
+	background: url(img/MaskGroup.jpg);
+	height: 464px;
+	width: 100%;
+	/*display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;*/
+
+}
+
+.logo {
+	display: flex;
+	padding-top: 46px;
+	justify-content: center;
+}
+
+.main-news-head {
+	font-weight: normal;
+	font-size: 72px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	margin-top: 32px;
+}
+
+.main-desription {
+	font-size: 14px;
+	margin: 0 auto;
+	color: #FFFFFF;
+	max-width: 456px;
+	text-align: center;
+	margin: 139px auto 0;
+}
+
+.review h2 {
+	margin-top: 44px; 
+	text-align: center;
+	
+}
+
+.articles {
+	display: flex;
+	max-width: 1168px;
+	margin: 20px auto 0;
+	flex-wrap: wrap;
+}
+
+.article {
+	flex: 0 1 33.333%;
+
+}
+
+.article h3 {
+	font-family: Playfair Display;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 23px;
+	color: #000;
+	margin-bottom: 0;
+}
+
+.description {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	max-width: 370px;
+	margin-top: 5px;
+}
+
+
+.tickets {
+	display: block;
+	max-width: 370px;
+	margin: 84px auto 0;
+	text-align: center;
+	
+}
+
+.tickets h2 {
+	text-align: center;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 17px;
+	/*margin-bottom: 35px;*/
+}
+
+.ofers {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.ticket h3 {
+	font-family: Playfair Display;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 23px;
+}
+
+.ticket p {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+}
+
+.btn {
+	
+	width: 170px;
+	max-height: 47px;
+	padding: 10px 0 6px;
+	background: #FF7931;
+	display: block;
+	margin: 25px auto 0;
+}
+
+.btn-ref {
+	color: #fff;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 2px;
+	vertical-align:middle;
+
+}
+
+.btn-ref::after {
+    content: url('img/Arrow forward.svg');
+ 	vertical-align:middle;
+
+}
+
+.footer {
+	margin-top: 86px;
+	background:  #575757;
+	
+}
+
+.nav a {
+	color: white;
+	text-decoration: none;
+	flex-shrink: 0;
+	font-family: Roboto;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.head-copy {
+	max-width: 1171px;
+	margin: 0 auto;
+	font-family: 'Roboto', sans-serif;
+}
+
+.nav {
+	display: flex;
+	margin: 32px auto;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	
+}
+
+p.title {
+	font-family: Playfair Display;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 28px;
+	text-align: center;
+	padding-top: 26px;
+	color: white;
+}
+
+.social {
+	margin: 42px auto 0;
+	padding-bottom: 46px;
+	width: 169px;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.icon {
+	background: white;	
+	height: 47px;
+	width: 47px;
+}
+
+.icon img {
+	display: block;
+	margin: auto;
+	padding: 12px 0;
+
+}
+
+@media screen and (max-width: 1200px) {
+	.articles {
+		justify-content: space-around;
+		align-items: center;
+	}
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+	
+}
+
+/* 320px - 576px */
+@media screen and (max-width: 576px) {
+	
+}

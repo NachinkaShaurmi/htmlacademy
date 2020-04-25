@@ -9,12 +9,14 @@ body {
 	font: inherit;
 	vertical-align: baseline;
 
+
 }
 
-header, nav, article {
+header, nav, article, main {
 	max-width: 1440px;
 	margin: 0 auto;
 	font-family: 'Roboto', sans-serif;
+
 }
 
 a {
@@ -43,17 +45,22 @@ h2 {
 	font-weight: 400;
 	text-transform: uppercase;
 	flex-wrap: wrap;
+	align-content: flex-start;
+	align-items: flex-end;
+	align-content: stretch;
 
 }
 
 .bkg {
-	background: #151526;
+	/*background: #001927;*/
 }
 
 .main-news {
 	background: url(img/MaskGroup.jpg);
 	height: 464px;
 	width: 100%;
+	background-size: cover;
+	background-position: 50% 0;
 	/*display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -77,6 +84,7 @@ h2 {
 }
 
 .main-desription {
+
 	font-size: 14px;
 	margin: 0 auto;
 	color: #FFFFFF;
@@ -96,11 +104,12 @@ h2 {
 	max-width: 1168px;
 	margin: 20px auto 0;
 	flex-wrap: wrap;
+
 }
 
 .article {
 	flex: 0 1 33.333%;
-
+	z-index: 2;
 }
 
 .article h3 {
@@ -123,14 +132,34 @@ h2 {
 	font-size: 14px;
 	max-width: 370px;
 	margin-top: 5px;
+	z-index: 2;
 }
 
-
 .tickets {
+	background: #f7f7f7;
+	max-height: 556px;
+	margin-top: 57px;
+}
+
+.circle {
+	background: white 50% 0;
+	height: 707px;
+	width: 707px;
+	position: relative;
+	margin: 0 auto;
+	border-radius: 50%;
+	top: -100px;
+
+}
+
+.tickets-content {
 	display: block;
 	max-width: 370px;
 	margin: 84px auto 0;
-	text-align: center;	
+	text-align: center;
+	padding-top: 33px;
+	position: relative;
+	top: -20px;
 }
 
 .tickets h2 {
@@ -164,6 +193,14 @@ h2 {
 	font-size: 14px;
 }
 
+hr {
+	width: 100px;
+	height: 0;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	opacity: 0.4;
+	margin:  10px auto 0;
+}
+
 .btn {
 	
 	width: 170px;
@@ -194,9 +231,9 @@ h2 {
 }
 
 .footer {
-	margin-top: 86px;
+	margin-top: 52px;
 	background:  #575757;
-	
+	z-index: 1;
 }
 
 .nav a {
@@ -213,6 +250,7 @@ h2 {
 	margin: 0 auto;
 	font-family: 'Roboto', sans-serif;
 	border-bottom: 1px solid rgba(255, 255, 255, .4);
+
 }
 
 .nav {
@@ -255,8 +293,16 @@ p.title {
 
 }
 
+.twitter img{
+	padding-top: 14px;
+}
+
 .navigation a:hover {
 	color: #FF7931;
+}
+
+.icon:hover {
+	background: #ff7931;
 }
 
 @media screen and (max-width: 1200px) {
@@ -268,10 +314,11 @@ p.title {
 
 /* 576px - 768px */
 @media screen and (max-width: 768px) {
-	
+	.main-desription {
+		margin: 10px auto 0;
 }
 
 /* 320px - 576px */
 @media screen and (max-width: 576px) {
-	
+
 }
